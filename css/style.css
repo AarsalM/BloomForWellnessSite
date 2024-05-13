@@ -1,0 +1,286 @@
+/*********************************************************************
+**********************************************************************
+	Group Name : Tech Velocity;
+	Group Members : Mohit Verma, Arsh Luthra, Sahithi Vasireddy, Ahmed Abdella, Aarsal Massodi;
+	Date : 29-07-2022;
+	Project : Bloom For Wellness;
+
+	Color-guide
+	***********
+	#F7D2E4 - pink(navigation, footer)
+	#4CAF50 - green
+	#E6BED2 - dark pink
+	#e8e8e8 - grey
+	rgb(255, 255, 255) - white
+	rgb(0, 0, 0) - Black
+	whitesmoke
+
+
+	Typography Guide
+	****************
+	n1 - 'Shadows Into Light', cursive - 30px
+	h1 - 'Bilbo Swash Caps', cursive - 8rem
+	h2 - 'ZCOOL XiaoWei', serif - 40px
+	paragraphs - 'ZCOOL XiaoWei', serif - all
+	footer - 'ZCOOL XiaoWei', serif- 15px
+
+	Table of Contents
+	*****************
+	1. Body Style
+	2. h1 Style
+	3. header image Style
+	4. Paragraph Style
+	5. Button Style
+	6. Footer Style
+		About Page Css 
+	7. h2 Style
+	8. Paragraph Style
+	9. Media Screen (960px)
+	10.Media Screen (654px)
+
+**********************************************************************
+*********************************************************************/
+
+
+/****************************************************
+1. Body Style
+****************************************************/
+.color-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0,0,.4);
+/*    border-radius: 10px;*/
+}
+.masthead {
+    background-size: cover;
+    min-height: 110vh;
+    background-position:center bottom 30%;
+    position: relative;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px rgb(0, 0,0,.6);
+    background-attachment: fixed;
+}
+
+#bookingform {
+	margin: 10px;
+	padding: 10px;
+}
+
+.form-label {
+	padding-top: 10px;
+}
+
+#bookingform:first-of-type {
+	padding-top: 0;
+}
+
+#bookingform>.form-label:nth-of-type(4) {
+	padding-top: 0;
+}
+
+#bookingform button {
+	display: block;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+form h6 {
+	text-align: center;
+	padding-top: 25px;
+}
+/****************************************************
+2. h1 Style
+****************************************************/
+h1
+{
+    color:whitesmoke;
+    font-weight: bold;
+    font-family: 'Bilbo Swash Caps', cursive;
+	font-size: 8rem;
+}
+.header-text 
+{ 
+	margin-right: 5%; 
+	margin-left: 5%; 
+}
+.header-p
+{
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 30px;
+}
+
+/****************************************************
+3. header image Style
+****************************************************/
+header > nav > div > a > img {
+	height: 120px;
+}
+.header-img 
+{
+	background: url('../img/bloombackground.png') ; 
+	background-attachment: fixed;
+	width: auto;
+	height: 960px;
+	background-size: cover;
+	background-position: bottom 0% center; 
+	filter: grayscale(15%);
+}
+
+/****************************************************
+4. Paragraph Style
+****************************************************/
+.n1{
+    font-family: 'Quicksand', sans-serif;
+	font-size: 30px;
+    text-align: center;
+    color:whitesmoke;
+}
+
+/****************************************************
+5. Button Style
+****************************************************/
+.n2 {
+    background-color: #4CAF50; /* Green */
+  	border: none;
+  	color: rgb(0, 0, 0);
+  	padding: 5px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 25px;
+  	border-radius: 40px;
+    align-items: center;
+    color:whitesmoke;
+    
+}
+
+.btn-outline-light
+{
+	background-color: #83f28f; /* Green */
+  	border: none;
+  	color: black;
+  	padding: 5px 32px;
+  	text-align: center;
+  	text-decoration: none;
+	display: inline-block;
+  	font-size: 25px;
+  	border-radius: 40px;
+}
+
+
+
+
+
+/****************************************************
+6. Footer Style
+****************************************************/
+#footerbutton
+{
+	background-color: #E6BED2; /* dark pink */
+  	border: none;
+  	color: black;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 25px;
+  	border-radius: 10px;
+  	position: absolute;
+}
+
+
+/****************************************************
+           About Page Css Starts
+****************************************************/
+/****************************************************
+7. h2 Style
+****************************************************/
+.h2
+{
+	font-family: 'ZCOOL XiaoWei', serif;
+	font-size: 50px;
+	font-style: bold;
+	margin-top: 100px;
+}
+
+/****************************************************
+8. Paragraph Style
+****************************************************/
+.p
+{
+	font-family: 'ZCOOL XiaoWei', serif;
+	font-size: all;
+	text-align: justify;
+}
+.text
+{
+	background-color: #e8e8e8;
+}
+#middlepicture2{
+	display: none;
+}
+#middlepicture4{
+	display: none;
+}
+/****************************************************
+           About Page Css Ends
+****************************************************/
+
+
+/****************************************************
+9.         Media Screen Starts at 960px
+****************************************************/
+@media screen and ( max-width : 960px ) 
+	{	
+
+		.header-h1
+		{
+			font-size: 120px;
+		}
+	}
+
+/****************************************************
+10.          Media Screen Starts at 654px
+****************************************************/
+@media screen and ( max-width : 654px ) 
+	{	
+		.masthead {
+			background: url('../img/mobilehome.jpeg'); 
+			width: auto;
+			height: 800px;
+			background-size: cover; 
+			/* opacity: 0.8; */
+		}
+
+		#footerlogo {
+			display:none;
+		}
+
+		#middlepicture1{
+			display: none;
+		}
+
+		#middlepicture2{
+			display: block;
+		}
+
+		#contactimage{
+			display:none;
+		}
+		
+		.navbar 
+			{ 
+				width: 100%; 
+				display: block;
+			}
+
+		.header-h1
+		{
+			font-size: 100px;
+		}
+		
+	}
+	  
+
+
+
